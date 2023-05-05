@@ -12,6 +12,12 @@
     />
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="JS/script.js" />
+    <style>
+      .error{
+        color: red; 
+        font-weight: bolder;
+      }
+    </style>
   </head>
   <body>
     <!-- MENU BAR -->
@@ -106,15 +112,15 @@
         <section>
           <h1 class="registrar">Registrarse</h1>
           <br><br>
-          <form action="row g-3 needs-validation">
+          <form method="post" id="formulario1" action="recibir_datos">
             <div class="container-fluid">
               <div class="row">
-                <div class="col">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
                   <!-- Rut  -->
-                  <div class="mb-3">
+                  <div class="form-group">
                     <label for="rut" class="form-label">Rut</label>
-                    <input type="text" placeholder="Ej: 12345678-k" class="form-control" id="rut" required>
+                    <input type="text" name="rut" placeholder="Ej: 12345678-k" class="form-control" id="rut" value="">
                   </div>
 
                   <!-- Nombre  -->
@@ -221,5 +227,9 @@
     integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
     crossorigin="anonymous"
   ></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.10.0/jquery.validate.min.js"></script>
+  <script src="js/validador.js" type="text/javascript"></script>
 </body>
 </html>

@@ -112,15 +112,15 @@
         <section>
           <h1 class="registrar">Registrarse</h1>
           <br><br>
-          <form method="post" id="formulario1" action="recibir_datos">
-            <div class="container-fluid">
+          <form method="POST" id="formularioUno" action="recibir_datos">
+            <div class="form-group">
               <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
                   <!-- Rut  -->
-                  <div class="form-group">
+                  <div class="mb-3">
                     <label for="rut" class="form-label">Rut</label>
-                    <input type="text" name="rut" placeholder="Ej: 12345678-k" class="form-control" id="rut" value="">
+                    <input type="text" name="rut" placeholder="Ej: 12345678-k" class="form-control" id="rut" value="" required>
                   </div>
 
                   <!-- Nombre  -->

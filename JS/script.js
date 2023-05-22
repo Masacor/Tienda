@@ -1,4 +1,6 @@
-
+function mostrarMensaje() {
+    alert("¡Gracias por registrarte!");
+}
 
 //VALIDACION FORMULARIO REGISTRAR
 $(document).ready(function() {
